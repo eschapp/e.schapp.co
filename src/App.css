@@ -6,19 +6,32 @@
   list-style: none;
 }
 .App-logo img {
-  height: 200px;
+  width: 80%;
   border-radius: 15px 50px 30px;
+  padding: 10px;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
+  background-color: orange;
+  height: 100px;
   padding: 20px;
   color: white;
 }
 
-.App-intro {
-  font-size: large;
+.App-container {
+  display: flex;
+  background-color: blue;
+}
+
+.App-sidebar {
+  padding: '10px';
+  background-color: #fff;
+  flex: 1;
+}
+
+.App-content {
+  flex: 3;
+  background-color: burlywood;
 }
 
 @keyframes App-logo-spin {

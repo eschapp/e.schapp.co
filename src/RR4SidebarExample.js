@@ -13,56 +13,41 @@ import './RR4SidebarExample.css'
 const routes = [
   { pattern: '/',
     exactly: true,
-    sidebar: () => <div>Home!</div>,
+    sidebar: () => <div>Home</div>,
     main: () => <h2>Main</h2>
   },
-  { pattern: '/foo',
-    sidebar: () => <div>foo!</div>,
-    main: () => <h2>Foo</h2>
+  { pattern: '/hire',
+    sidebar: () => <div>Hire</div>,
+    main: () => <h2>Hire Me</h2>
   },
-  { pattern: '/bar',
-    sidebar: () => <div>Bar!</div>,
-    main: () => <h2>Bar</h2>
+  { pattern: '/portfolio',
+    sidebar: () => <div>Portfolio</div>,
+    main: () => <h2>Portfolio</h2>
+  },
+  { pattern: '/about',
+    sidebar: () => <div>About</div>,
+    main: () => <h2>About Me</h2>
   }
 ]
 
 const SidebarExample = ({ history }) => (
 <div>
   <Router history={history}>
-    <div style={{ display: 'flex' }}>
-      <div style={{
-        padding: '10px',
-        width: '40%',
-        background: '#f0f0f0',
-      }}>
+    <div className="App-container">
+
+      <div className="App-sidebar">
         <ul>
           <li>
             <Icon className="App-icon" />
           </li>
           <li><Link to="/">Home</Link></li>
-          <li><Link to="/foo">Foo</Link></li>
-          <li><Link to="/bar">Bar</Link></li>
+          <li><Link to="/hire">Hire Me</Link></li>
+          <li><Link to="/portfolio">Portfolio</Link></li>
+          <li><Link to="/about">About</Link></li>
         </ul>
-
-        {routes.map((route, index) => (
-          // you can render a match in as many places
-          // as you want in your app, it will match with
-          // any other `Match`s that have the same
-          // pattern. So, a sidebar, or breadcrumbs, or
-          // anything else that requires you to render
-          // multiple things in multiple places at the
-          // same location is nothing more than multiple
-          // `Match`s
-          <Match
-            key={index}
-            pattern={route.pattern}
-            component={route.sidebar}
-            exactly={route.exactly}
-          />
-        ))}
       </div>
 
-      <div style={{ flex: 1, padding: '10px' }}>
+      <div className="App-content">
         {routes.map((route, index) => (
           // rendering `Match`s with different
           // components but the same pattern as before
@@ -74,6 +59,7 @@ const SidebarExample = ({ history }) => (
           />
         ))}
       </div>
+
     </div>
   </Router>
 </div>
