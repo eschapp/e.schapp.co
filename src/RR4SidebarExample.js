@@ -6,6 +6,8 @@ import Link from 'react-router/Link'
 import Redirect from 'react-router/Redirect'
 import Icon from './Icon'
 import './RR4SidebarExample.css'
+import Sidebar from './Sidebar'
+import Content from './Content'
 
 // Each "route" has two components, one for the sidebar
 // and one for the main area, we'll render them
@@ -35,20 +37,8 @@ const SidebarExample = ({ history }) => (
   <Router history={history}>
     <div className="App-container">
 
-      <div className="App-sidebar">
-        <ul>
-          <li>
-            <Icon className="App-icon" />
-          </li>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/hire">Hire Me</Link></li>
-          <li><Link to="/portfolio">Portfolio</Link></li>
-          <li><Link to="/about">About</Link></li>
-        </ul>
-      </div>
-
       <div className="App-content">
-        {routes.map((route, index) => (
+                {routes.map((route, index) => (
           // rendering `Match`s with different
           // components but the same pattern as before
           <Match
@@ -59,7 +49,10 @@ const SidebarExample = ({ history }) => (
           />
         ))}
       </div>
-
+      
+      <div className="App-sidebar">
+        <Sidebar />
+      </div>
     </div>
   </Router>
 </div>
