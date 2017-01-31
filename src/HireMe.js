@@ -21,4 +21,4 @@ class HireMe extends Component {
   }
 }
 
-export default HireMe;<h1>For Hire</h1>
+export default HireMe;

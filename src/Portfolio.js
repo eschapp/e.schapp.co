@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import styled, { ThemeProvider } from 'styled-components'
+import styled from 'styled-components'
 import { Grid, Col, Row } from 'react-styled-flexboxgrid'
 import BlankImg from './blank.png'
 
