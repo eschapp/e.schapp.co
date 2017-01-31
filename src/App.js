@@ -10,7 +10,7 @@ const theme = {
   flexboxgrid: {
     // Defaults
     gutterWidth: 1, // rem
-    outerMargin: 2, // rem
+    outerMargin: 0, // rem
     container: {
       sm: 46, // rem
       md: 61, // rem
@@ -26,7 +26,6 @@ const theme = {
 }
 
 const WrapperGrid = styled(Grid)`
-  max-width: 1200px;
   margin: 0 auto;
   `
 const Headline = styled.h1`
@@ -47,13 +46,10 @@ class App extends Component {
             <Col lg={12}><Headline>Eric Schapp</Headline></Col>
           </Row>
           <Row>
-            <Col lg={4}>
-              <h2>This Will be the Sidebar</h2>
+            <Col xs={12} sm={6} md={4} lg={2}>
               <Sidebar /> 
             </Col>
-            <Col sm={4} md={6} lg={8}>
-              <h2>This will the the Content</h2>
-              <h4>Still a work in progress.</h4>
+            <Col xs={12} sm={6} md={8} lg={10}>
               <Content />
             </Col>
           </Row>

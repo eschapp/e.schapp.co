@@ -2,16 +2,29 @@ import React, {Component} from 'react'
 import Router from 'react-router/BrowserRouter'
 import Match from 'react-router/Match'
 import routes from './RouteConfig'
+import styled from 'styled-components'
+
+import Welcome from './Welcome'
+import HireMe from './HireMe'
+import Portfolio from './Portfolio'
+import About from './About'
+
+const ContentDiv = styled.div`
+  border-radius: 50px 0 0 0;
+  background-color: white;
+  margin: 0 0 0 0;
+  padding: .5em 1em 0 1em;
+`
 
 class Content extends Component {
   render() {
     return (
-      <div>
-        <h1>Main</h1>
-        <h1>Hire Me</h1>
-        <h1>Portfolio</h1>
-        <h1>About</h1>
-      </div>
+      <ContentDiv>
+        <Welcome />
+        <HireMe />
+        <Portfolio />
+        <About />
+      </ContentDiv>
     );
   }
 }

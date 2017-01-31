@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import logo from './Icon.jpeg';
 
 const IconImg = styled.img`
-  width: 30%;
+  width: 80%;
 `
 class Icon extends Component {
   render() {
