@@ -10,10 +10,11 @@ import Portfolio from './Portfolio'
 import About from './About'
 
 const ContentDiv = styled.div`
-  border-radius: 50px 0 0 0;
-  background-color: white;
+  border-radius: 20px 0 0 0;
+  background: #8da0af;
   margin: 0 0 0 0;
-  padding: .5em 1em 0 1em;
+  padding: .5em 1em 1em 1em;
+  color: #fe6d39;
 `
 
 class Content extends Component {

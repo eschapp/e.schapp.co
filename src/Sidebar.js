@@ -9,13 +9,13 @@ class Sidebar extends Component {
       <div>
         <Router history={history}>
         <ul>
-          <li>
-              <Icon className="App-icon" />
-          </li>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/#hire">Hire Me</Link></li>
-          <li><Link to="/#portfolio">Portfolio</Link></li>
-          <li><Link to="/#about">About</Link></li>
+        
+          <Icon className="App-icon" />
+          
+          <Link to="/">Home</Link><br />
+          <Link to="/#hire">Hire Me</Link><br />
+          <Link to="/#portfolio">Portfolio</Link><br />
+          <Link to="/#about">About</Link><br />
         </ul>
         </Router>
       </div>

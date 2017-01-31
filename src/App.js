@@ -54,7 +54,7 @@ class App extends Component {
             </Col>
           </Row>
           <Row>
-            <Col><h2>This Will be a footer</h2></Col>
+            <Col><h2>_____ </h2></Col>
           </Row>
         </WrapperGrid>
       </ThemeProvider>

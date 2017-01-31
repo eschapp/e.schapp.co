@@ -7,7 +7,7 @@ injectGlobal`
     margin: 0;
     font-size: 2em;
     font-weight: 400;
-    background: #EEE;
+    background-image: url("background.png"); 
     font-family: HelveticaNeue-Light,'Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
   }
   h1 {
@@ -18,6 +18,6 @@ injectGlobal`
     text-align: center;
   }
   h1, h2, h3, h4, h5, h6 {
-    color: orange;
+    color: #a2bc55;
   }
   `
