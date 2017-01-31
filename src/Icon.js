@@ -1,12 +1,16 @@
-import React, { Component } from 'react';
-import logo from './Icon.jpeg';
-import './Icon.css';
+import React, { Component } from 'react'
+import styled from 'styled-components'
 
+import logo from './Icon.jpeg';
+
+const IconImg = styled.img`
+  width: 80%;
+`
 class Icon extends Component {
   render() {
     return (
       <div className="App-logo">
-        <img src={logo} alt="App-logo" />
+        <IconImg src={logo} alt="App-logo" />
       </div>
     );
   }
